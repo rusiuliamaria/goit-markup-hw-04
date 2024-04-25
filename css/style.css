@@ -18,9 +18,9 @@ body {
   margin: 0;
   padding: 0;
 }
+/* Header section */
 .header-section {
   display: flex;
-  border: 1px solid var(--border-color);
 }
 .container {
   width: 1200px;
@@ -35,7 +35,7 @@ body {
   flex-direction: row;
   text-align: center;
 }
-/* Nav bar */
+/* Menu bar navigation*/
 .logo .logo-link {
   color: var(--primary-text-color);
   font-family: var(--raleway-font);
@@ -66,6 +66,7 @@ body {
   font-size: 14px;
   font-family: var(--roboto-font);
 }
+/* Contacts header */
 .contact-links {
   display: flex;
   gap: 40px;
@@ -93,6 +94,7 @@ body {
   align-items: center;
   flex-direction: row;
 }
+/* Icons for mail adres and mobile phone section  */
 .nav-icon__item {
   width: 16px;
   height: 16px;
@@ -103,9 +105,10 @@ body {
 
 .nav-icon__item:hover,
 .nav-icon__item:focus {
-  fill: var(--blue-hover-color);
+  stroke: var(--blue-hover-color);
 }
-/* Main section */
+/* Hero section and  background with image */
+
 .hero-section .container {
   background-image: linear-gradient(
       to left,
@@ -136,7 +139,7 @@ body {
 }
 .hero-button {
   color: var(--white-color);
-  background-color: var(--blue-hover-color);
+  background-color: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
@@ -145,8 +148,13 @@ body {
   border: none;
   padding: 10px 20px;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
-/* About us */
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--blue-hover-color);
+}
+/* About us section */
 .section {
   padding: 94px 0;
 }
@@ -176,6 +184,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+/* What we do section/ section with work phote*/
 .style-h2 {
   font-size: 36px;
   font-weight: 700;
@@ -185,12 +194,14 @@ body {
   text-align: center;
   padding-bottom: 20px;
 }
+
 .our-work__images {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 30px;
 }
+/*Team section with members cards and social links*/
 .our-team {
   background-color: var(--secundary-background-color);
   padding: 94px 0;
@@ -242,6 +253,7 @@ body {
   background-color: var(--blue-hover-color);
   fill: var(--white-color);
 }
+/*Icons with Customers section   */
 .about-customers__icons {
   display: flex;
   gap: 30px;
@@ -266,6 +278,7 @@ body {
   width: 100px;
   height: 60px;
 }
+/*Footer section  */
 .footer-section .container {
   display: flex;
   flex-direction: row;
@@ -301,6 +314,7 @@ body {
   color: var(--blue-hover-color);
   text-decoration: underline;
 }
+/* Find us  info section with social links icons  */
 .find-us__section {
   display: flex;
   flex-direction: column;
@@ -342,13 +356,14 @@ body {
   line-height: 16.41px;
   letter-spacing: 0.03em;
 }
-/* Portofolio */
+/* Portofolio Page*/
 .btn-list {
   display: flex;
+  align-items: center;
+  list-style: none;
   justify-content: center;
   gap: 8px;
   padding-bottom: 50px;
-  list-style: none;
 }
 .btn-item {
   background-color: var(--secundary-background-color);
@@ -370,6 +385,7 @@ body {
   color: var(--white-color);
   box-shadow: 1px 1px 4px 0px var(--border-color);
 }
+/* Section about projects with cards  */
 .our-projects {
   display: flex;
   flex-wrap: wrap;
@@ -397,4 +413,82 @@ body {
   font-family: inherit;
   margin-left: 24px;
   margin-bottom: 20px;
+}
+/*Footer section with adress info and contacts */
+.footer-section .container {
+  display: flex;
+  flex-direction: row;
+  gap: 80px;
+}
+.footer-section {
+  background-color: var(--primary-background-color);
+  padding: 60px 0;
+}
+.logo-link__footer {
+  color: var(--white-color);
+}
+.address-footer {
+  color: var(--white-color);
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+.address-link {
+  color: var(--secundary-text-color);
+  font-family: var(--roboto-font);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--blue-hover-color);
+  text-decoration: underline;
+}
+/* Find us  info section with social links icons  */
+.find-us__section {
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0;
+}
+.find-us__icons {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+.find-us-icon {
+  text-align: center;
+  padding: 12px 12px 10px 12px;
+  border-radius: 50px;
+  background: var(--icons-background);
+  fill: var(--white-color);
+}
+.find-us-icon:hover,
+.find-us-icon:focus {
+  background-color: var(--blue-hover-color);
+  fill: var(--white-color);
+}
+.find-us-icon__item {
+  width: 20px;
+  height: 20px;
+  fill: var(--white-color);
+  stroke: var(--white-color);
+}
+.find-us__title {
+  display: flex;
+  align-items: center;
+  color: var(--white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
 }
